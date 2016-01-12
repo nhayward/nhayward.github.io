@@ -21,8 +21,11 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	text-align: center;
 	padding: 20px;
+}
+
+.project h2 {
+	text-align: center;
 }
 
 .project:nth-child(even) {
@@ -31,13 +34,27 @@ body {
 	flex-direction: row-reverse;
 }
 
+.project:nth-child(even) a {
+	color: white;
+}
+
 .projDesc {
 	flex-basis: 60%;
 	flex-grow: 1;
 	padding: 0px 10px;
 }
 
+.projTech {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.projTech ul {
+	flex-grow: 1;
+}
+
 .projImage {
 	flex-basis: 400px;
 	flex-grow: 1;
+	text-align: center;
 }
