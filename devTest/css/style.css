@@ -165,6 +165,6 @@ a {
 	padding-bottom: 10px;
 }
 
-#footer #social img {
-	padding: 0 10px;
+#footer #social a {
+	margin: 0 10px;
 }
