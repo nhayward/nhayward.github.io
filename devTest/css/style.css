@@ -15,6 +15,18 @@ a {
 	padding: 10px 0;
 }
 
+@media screen and (max-width: 1000px) {
+	#header {
+		margin: 0 5%;
+	}
+}
+
+@media screen and (max-width: 890px) {
+	#header {
+		margin: 0 1%;
+	}
+}
+
 #logo {
 	flex: 1 1 30%;
 }
@@ -22,6 +34,12 @@ a {
 #nav {
 	flex: 1 1 70%;
 	text-align: right;
+}
+
+@media screen and (max-width: 815px) {
+	#nav {
+		display: none;
+	}
 }
 
 #nav a {
@@ -99,7 +117,7 @@ a {
 
 #bottomContent #advantages > div .advantage {
 	transition: 0.5s all;
-	flex-basis: 150px;
+	flex-basis: 155px;
 	margin: 10px 0 20px 0;
 }
 
