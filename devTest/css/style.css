@@ -102,7 +102,7 @@ a {
 }
 
 #bottomContent {
-	padding: 20px 0 50px;
+	padding: 70px 0 100px;
 }
 
 #bottomContent #advantages {
@@ -168,6 +168,22 @@ a {
 #bottomContent #partners > p {
 	margin-left: 20%;
 	margin-right: 20%;
+}
+
+#bottomContent #partners > div {
+	display: flex;
+	margin: 0 15%;
+}
+
+#bottomContent #partners > div .partner {
+	flex: 1 1 33%;
+	background-color: #666;
+	margin: 1px;
+	padding: 10px 0;
+}
+
+#bottomContent #partners > div .partner img {
+	max-height: 75px;
 }
 
 #footer {
