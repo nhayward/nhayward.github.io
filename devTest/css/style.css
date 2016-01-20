@@ -4,6 +4,10 @@ body {
 	font-family: MyriadPro-Regular, Arial, sans-serif;
 }
 
+a {
+	text-decoration: none;
+}
+
 #header {
 	display: flex;
 	align-items: center;
@@ -21,7 +25,6 @@ body {
 }
 
 #nav a {
-	text-decoration: none;
 	color: black;
 }
 
@@ -85,23 +88,27 @@ body {
 }
 
 #bottomContent #advantages {
+	margin-bottom: 100px;
+}
+
+#bottomContent #advantages > div {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
 
-#bottomContent #advantages .advantage {
+#bottomContent #advantages > div .advantage {
 	transition: 0.5s all;
 	flex-basis: 150px;
 	margin: 10px 0 20px 0;
 }
 
-#bottomContent #advantages .advantage:hover {
+#bottomContent #advantages > div .advantage:hover {
 	transition: 0.5s all;
 	margin: 0px;
 }
 
-#bottomContent #advantages .advantage .advCircle {
+#bottomContent #advantages > div .advantage .advCircle {
 	transition: 0.5s all;
 	background-color: #ddd;
 	border-radius: 50%;
@@ -110,14 +117,14 @@ body {
 	margin: auto;
 }
 
-#bottomContent #advantages .advantage:hover .advCircle {
+#bottomContent #advantages > div .advantage:hover .advCircle {
 	transition: 0.5s all;
 	background-color: #cc99cc;
 	height: 115px;
 	width: 115px;
 }
 
-#bottomContent #advantages .advantage p {
+#bottomContent #advantages > div .advantage p {
 	transition: 0.5s all;
 	color: #888;
 	text-transform: uppercase;
@@ -125,7 +132,31 @@ body {
 	padding: 10px 0;
 }
 
-#bottomContent #advantages .advantage:hover p {
+#bottomContent #advantages > div .advantage:hover p {
 	transition: 0.5s all;
+	color: #cc99cc;
+}
+
+#bottomContent #advantages hr {
+	width: 150px;
+	margin-bottom: 30px;
+}
+
+#bottomContent #advantages > p {
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+#bottomContent #partners > p {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#footer {
+	background-color: #ddd;
+	padding: 20px;
+}
+
+#footer #footerNav, #footer #footerNav a {
 	color: #cc99cc;
 }
