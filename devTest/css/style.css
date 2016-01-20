@@ -50,3 +50,26 @@ body {
 	padding: 5px 10px;
 	margin-right: 5px;
 }
+
+#topContent {
+	color: white;
+}
+
+#topContent #carousel {
+	background-image: url(../img/top_image.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 555px;
+}
+
+#topContent #slideDots {
+	background-color: #33cc66;
+	height: 50px;
+}
+
+#topContent #intro {
+	background-color: #339966;
+	text-align: center;
+	padding: 40px 300px 50px;
+	line-height: 1.5;
+}
