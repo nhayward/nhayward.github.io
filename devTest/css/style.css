@@ -1,5 +1,7 @@
 body {
 	margin: auto;
+	font-size: 18px;
+	font-family: MyriadPro-Regular, Arial, sans-serif;
 }
 
 #header {
@@ -23,12 +25,12 @@ body {
 	color: black;
 }
 
-#nav a:hover {
+#nav a:not(#inAction):hover {
 	text-decoration: underline;
 }
 
-#nav #mainNav {
-	font-size: 18px;
+#nav #globalNav {
+	font-size: 16px;
 }
 
 #nav #globalNav {
