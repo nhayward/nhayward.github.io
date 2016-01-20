@@ -8,7 +8,7 @@ body {
 	display: flex;
 	align-items: center;
 	margin: 0 10%;
-	padding: 20px 0;
+	padding: 10px 0;
 }
 
 #logo {
@@ -60,6 +60,7 @@ body {
 #topContent #carousel {
 	background-image: url(../img/top_image.png);
 	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 	height: 555px;
 }
@@ -69,9 +70,62 @@ body {
 	height: 50px;
 }
 
+#topContent #intro, #bottomContent, #footer {
+	text-align: center;
+}
+
 #topContent #intro {
 	background-color: #339966;
-	text-align: center;
 	padding: 40px 20% 50px;
 	line-height: 1.5;
+}
+
+#bottomContent {
+	padding: 20px 0 50px;
+}
+
+#bottomContent #advantages {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#bottomContent #advantages .advantage {
+	transition: 0.5s all;
+	flex-basis: 150px;
+	margin: 10px 0 20px 0;
+}
+
+#bottomContent #advantages .advantage:hover {
+	transition: 0.5s all;
+	margin: 0px;
+}
+
+#bottomContent #advantages .advantage .advCircle {
+	transition: 0.5s all;
+	background-color: #ddd;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	margin: auto;
+}
+
+#bottomContent #advantages .advantage:hover .advCircle {
+	transition: 0.5s all;
+	background-color: #cc99cc;
+	height: 115px;
+	width: 115px;
+}
+
+#bottomContent #advantages .advantage p {
+	transition: 0.5s all;
+	color: #888;
+	text-transform: uppercase;
+	margin: auto;
+	padding: 10px 0;
+}
+
+#bottomContent #advantages .advantage:hover p {
+	transition: 0.5s all;
+	color: #cc99cc;
 }
