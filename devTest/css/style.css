@@ -160,3 +160,11 @@ a {
 #footer #footerNav, #footer #footerNav a {
 	color: #cc99cc;
 }
+
+#footer #social {
+	padding-bottom: 10px;
+}
+
+#footer #social img {
+	padding: 0 10px;
+}
