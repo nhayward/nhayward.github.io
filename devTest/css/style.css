@@ -113,17 +113,61 @@ a {
 	color: white;
 }
 
-#topContent #carousel {
+#topContent #carouselContainer {
 	background-image: url(../img/top_image.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 555px;
 }
 
-#topContent #slideDots {
+#topContent #carouselContainer #carousel {
+	margin: 0 20%;
+}
+
+#topContent #carouselContainer #carousel > div h1 {
+	padding-bottom: 100px;
+}
+
+#topContent #carouselContainer #carousel > div .learn {
+	background-color: #339966;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 10px;
+	margin: 20px 0;
+}
+
+.slick-prev:before {
+	content: "\2039" !important;
+	font-size: 50px !important;
+}
+
+.slick-next:before {
+	content: "\203A" !important;
+	font-size: 50px !important;
+}
+
+@media screen and (max-width: 735px) {
+	#topContent #carouselContainer #carousel {
+		margin: 0 10%;
+	}
+}
+
+.slick-slide {
+	padding: 50px !important;
+}
+
+.slick-dots {
 	background-color: #33cc66;
-	height: 50px;
+}
+
+.slick-dots li button:before {
+	font-size: 11px !important;
+}
+
+.slick-dots li.slick-active button:before {
+	color: white !important;
 }
 
 #topContent #intro, #bottomContent, #footer {
@@ -163,7 +207,6 @@ a {
 
 #bottomContent #advantages > div .advantage .advCircle {
 	transition: 0.5s all;
-	/*position: relative;*/
 	background-color: #ddd;
 	border-radius: 50%;
 	height: 100px;
@@ -177,12 +220,6 @@ a {
 	height: 115px;
 	width: 115px;
 }
-
-/*#bottomContent #advantages > div .advantage .advCircle img {
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%,-50%);
-}*/
 
 #bottomContent #advantages > div .advantage #cloud {
 	background-image: url(../img/advantages/Cloud_grey.png);
