@@ -136,6 +136,7 @@ a {
 	font-size: 16px;
 	padding: 10px;
 	margin: 20px 0;
+	cursor: pointer;
 }
 
 .slick-prev:before {
@@ -292,6 +293,13 @@ a {
 #bottomContent #advantages > p {
 	margin-left: 30%;
 	margin-right: 30%;
+}
+
+@media screen and (max-width: 815px) {
+	#bottomContent #advantages > p {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
 }
 
 #bottomContent #partners > p {
