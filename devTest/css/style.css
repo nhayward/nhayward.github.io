@@ -36,7 +36,7 @@ a {
 	text-align: right;
 }
 
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 735px) {
 	#nav {
 		display: none;
 	}
@@ -69,6 +69,12 @@ a {
 	padding: 0 10px;
 }
 
+@media screen and (max-width: 815px) {
+	#nav #mainNav a {
+		padding: 0 5px;
+	}
+}
+
 #nav #mainNav #inAction {
 	background-color: #996699;
 	color: white;
@@ -79,9 +85,10 @@ a {
 
 #menuButton {
 	cursor: pointer;
+	font-size: 18px;
 }
 
-@media screen and (min-width: 816px) {
+@media screen and (min-width: 736px) {
 	#menuButton {
 		display: none;
 	}
@@ -95,7 +102,7 @@ a {
 }
 
 #expandingMenu > div {
-	flex: 0 1 30%;
+	flex-grow: 1;
 }
 
 #expandingMenu > div > div {
