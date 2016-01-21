@@ -163,6 +163,7 @@ a {
 
 #bottomContent #advantages > div .advantage .advCircle {
 	transition: 0.5s all;
+	/*position: relative;*/
 	background-color: #ddd;
 	border-radius: 50%;
 	height: 100px;
@@ -175,6 +176,62 @@ a {
 	background-color: #cc99cc;
 	height: 115px;
 	width: 115px;
+}
+
+/*#bottomContent #advantages > div .advantage .advCircle img {
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}*/
+
+#bottomContent #advantages > div .advantage #cloud {
+	background-image: url(../img/advantages/Cloud_grey.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#bottomContent #advantages > div .advantage:hover #cloud {
+	background-image: url(../img/advantages/Cloud_white.png);
+}
+
+#bottomContent #advantages > div .advantage #flexible {
+	background-image: url(../img/advantages/Flexible_grey.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#bottomContent #advantages > div .advantage:hover #flexible {
+	background-image: url(../img/advantages/Flexible_white.png);
+}
+
+#bottomContent #advantages > div .advantage #cost {
+	background-image: url(../img/advantages/CostEffective_grey.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#bottomContent #advantages > div .advantage:hover #cost {
+	background-image: url(../img/advantages/CostEffective_white.png);
+}
+
+#bottomContent #advantages > div .advantage #easy {
+	background-image: url(../img/advantages/EasyToUse_grey.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#bottomContent #advantages > div .advantage:hover #easy {
+	background-image: url(../img/advantages/EasyToUse_white.png);
+}
+
+#bottomContent #advantages > div .advantage #compliant {
+	background-image: url(../img/advantages/Compliant_grey.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#bottomContent #advantages > div .advantage:hover #compliant {
+	background-image: url(../img/advantages/Compliant_white.png);
 }
 
 #bottomContent #advantages > div .advantage p {
