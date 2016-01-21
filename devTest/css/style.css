@@ -214,11 +214,11 @@ a {
 #bottomContent #partners > div .partner {
 	flex: 1 1 33%;
 	position: relative;
-	background-color: #666;
+	background-color: #6a6a6a;
 	margin: 1px;
 	padding: 10px 0;
 	height: 100px;
-	min-width: 175px;
+	min-width: 210px;
 }
 
 #bottomContent #partners > div .partner img {
