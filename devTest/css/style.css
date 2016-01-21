@@ -31,7 +31,7 @@ a {
 	flex: 1 1 30%;
 }
 
-#nav {
+#nav, #navCollapsed {
 	flex: 1 1 70%;
 	text-align: right;
 }
@@ -40,13 +40,16 @@ a {
 	#nav {
 		display: none;
 	}
+	#header {
+		margin: 0 5%;
+	}
 }
 
-#nav a {
+#nav a, #expandingMenu a {
 	color: black;
 }
 
-#nav a:not(#inAction):hover {
+#nav a:not(#inAction):hover, #expandingMenu a:hover {
 	text-decoration: underline;
 }
 
@@ -72,6 +75,31 @@ a {
 	border-radius: 5px;
 	padding: 5px 10px;
 	margin-right: 5px;
+}
+
+#menuButton {
+	cursor: pointer;
+}
+
+@media screen and (min-width: 816px) {
+	#menuButton {
+		display: none;
+	}
+}
+
+#expandingMenu {
+	display: none;
+	justify-content: flex-end;
+	margin: 0 5%;
+	height: 120px;
+}
+
+#expandingMenu > div {
+	flex: 0 1 30%;
+}
+
+#expandingMenu > div > div {
+	text-align: right;
 }
 
 #topContent {
