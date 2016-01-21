@@ -151,16 +151,6 @@ a {
 	cursor: pointer;
 }
 
-.slick-prev:before {
-	content: "\2039" !important;
-	font-size: 50px !important;
-}
-
-.slick-next:before {
-	content: "\203A" !important;
-	font-size: 50px !important;
-}
-
 @media screen and (max-width: 735px) {
 	#topContent #carouselContainer #carousel {
 		margin: 0 10%;
