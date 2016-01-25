@@ -60,7 +60,7 @@ body {
 	text-align: center;
 }
 
-.projImage {
+.projImage img {
 	width: 100%;
 	max-width: 400px;
 }
