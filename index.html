@@ -14,6 +14,7 @@
 
 	  ga('create', 'UA-72849068-1', 'auto');
 	  ga('send', 'pageview');
+	  setTimeout(“ga(‘send’,’event’,’Hooked 'em’,’on page at least 30 seconds‘)”,30000);
 	</script>
 </head>
 <body>
@@ -108,11 +109,6 @@
 			<a href="http://www.lamantiaenterprises.com" target="_blank"><img src="img/LamEnt.jpg" /></a>
 		</div>
 	</div>
-
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		setTimeout(function(){_gaq.push(['_trackEvent', 'Control', 'Bounce Rate', ''])},30000);
-	</script>
 
 </body>
 </html>
