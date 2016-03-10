@@ -4,11 +4,33 @@ body {
 	background-color: #EEE;
 }
 
+.ribbonLink {
+	position: fixed;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	transform: rotate(-45deg);
+	padding: 2px 0px;
+}
+
+#github {
+	background-color: black;
+	width: 145px;
+	top: 32px;
+	left: -28px;
+}
+
+#linkedin {
+	background-color: #007bb5;
+	width: 245px;
+	top: 68px;
+	left: -45px;
+}
+
 #header {
 	text-align: center;
-	background-color: #333;
-	color: white;
-	font-size: 30px;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 5em;
 	padding: 20px;
 }
 
@@ -29,13 +51,13 @@ body {
 	text-align: center;
 }
 
-.project:nth-child(even) {
+.project:nth-of-type(odd) {
 	background-color: #333;
 	color: white;
 	flex-direction: row-reverse;
 }
 
-.project:nth-child(even) a {
+.project:nth-of-type(odd) a {
 	color: white;
 }
 
