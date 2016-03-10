@@ -77,6 +77,10 @@ body {
 	flex-grow: 1;
 }
 
+.projTech ul li {
+	padding: 5px 0px;
+}
+
 .projImage {
 	flex-basis: 400px;
 	flex-grow: 1;
