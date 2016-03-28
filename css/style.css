@@ -87,6 +87,7 @@ body {
 
 .projDesc .challenge {
 	background-color: #ccc;
+	color: black;
 	padding: 20px;
 	border-radius: 20px;
 }
