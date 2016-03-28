@@ -85,6 +85,12 @@ body {
 	padding: 0px 10px;
 }
 
+.projDesc .challenge {
+	background-color: #ccc;
+	padding: 20px;
+	border-radius: 20px;
+}
+
 .projTech {
 	display: -webkit-box;
 	display: -webkit-flex;
