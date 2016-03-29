@@ -61,17 +61,11 @@ body {
 }
 
 .project:nth-of-type(odd) {
-	background-color: #333;
-	color: white;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: reverse;
 	-webkit-flex-direction: row-reverse;
 	    -ms-flex-direction: row-reverse;
 	        flex-direction: row-reverse;
-}
-
-.project:nth-of-type(odd) a {
-	color: white;
 }
 
 .projDesc {
@@ -86,10 +80,11 @@ body {
 }
 
 .projDesc .challenge {
-	background-color: #ccc;
+	background-color: white;
 	color: black;
-	padding: 20px;
 	border-radius: 20px;
+	box-shadow: 0 0 30px rgba(0,0,0,0.2);
+	padding: 20px;
 }
 
 .projTech {
