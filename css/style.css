@@ -87,10 +87,8 @@ body {
 	padding: 20px;
 }
 
-@media (max-width: 500px) {
-	.projDesc b + a {
-		font-size: 0.9rem;
-	}
+.projDesc b + a {
+	font-size: 0.9rem;
 }
 
 .projTech {
