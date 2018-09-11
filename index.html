@@ -19,12 +19,43 @@
 </head>
 <body>
 	
-	<a id="github" class="ribbonLink" href="https://github.com/nhayward?tab=repositories" target="_blank">GitHub</a>
+	<a id="github" class="ribbonLink" href="https://github.com/nhayward" target="_blank">GitHub</a>
 	<a id="linkedin" class="ribbonLink" href="https://www.linkedin.com/in/nick-hayward-304a5346" target="_blank">LinkedIn</a>
 
 	<div id="header">
 		<div id="name">Nick Hayward</div>
 		<div id="title">Web Developer</div>
+	</div>
+
+	<div class="project">
+		<div class="projDesc">
+			<h2>Book Light Editorial</h2>
+			<p><b>The Project:</b> To create a website for use by Book Light Editorial, a freelance editing team, in order to connect with clients, communicate services, post thoughts and advice in a blog, and promote edited works in print.</p>
+			<p><b>The Technologies:</b></p>
+			<div class="projTech">
+				<ul>
+					<li><a href="https://getgrav.org/" target="_blank">Grav CMS</a></li>
+					<li>HTML5</li>
+					<li>CSS3</li>
+				</ul>
+				<ul>
+					<li>JavaScript</li>
+					<li>Twig</li>
+					<li>PHP</li>
+				</ul>
+			</div>
+			<div class="challenge">
+				<h3>The Challenge: how to make the site content easily manageable by the client</h3>
+				<p>My client for this site was very motivated to manage the content themselves. They wanted a way to be able to do that so that they didn't need me to make every necessary update for them. I had worked a bit with Wordpress in the past, but I always found it to be a bit bulky and the admin UI is unintuitive and hard to navigate. I had heard about and briefly worked with a flat-file CMS called Grav and decided to give it a try for this site.</p>
+				<p>I found Grav to be very easy to work with from the development side. The YAML configuration made it easy to set global values that I could use as needed, and the Twig templating made it very easy to create and reuse modular pieces in different areas across the site. For the client's purposes, Grav has a core admin plugin which can be used to manage the content in a WYSIWYG editor as well as a dashboard to show site views and available plugin updates.</p>
+				<p>In the end the client was happy with this solution. They found the Grav admin plugin to be easy enough for them to use. There is a slight learning curve in that grav pages use Markdown. This can be overcome by using raw HTML if that is more easily understood, or via the WYSIWYG editor which will just paste in the proper Markdown elements for headers, bolding, italics, etc.</p>
+			</div>
+			<p><b>The Source Code:</b> <a href="https://github.com/nhayward/BookLightEditorial" target="_blank">https://github.com/nhayward/BookLightEditorial</a></p>
+			<p><b>The Live Site:</b> <a href="http://booklighteditorial.com" target="_blank">http://booklighteditorial.com</a></p>
+		</div>
+		<div class="projImage">
+			<a href="http://booklighteditorial.com" target="_blank"><img src="img/BookLightEditorial.png" /></a>
+		</div>
 	</div>
 
 	<div class="project">
@@ -36,7 +67,7 @@
 				<ul>
 					<li>HTML5</li>
 					<li>CSS3</li>
-					<li>JavaScript ES5</li>
+					<li>JavaScript</li>
 				</ul>
 				<ul>
 					<li><a href="http://jquery.com/" target="_blank">jQuery 1.11.3</a></li>
@@ -55,40 +86,41 @@
 				<p><i>If you would like to test the RSVP interaction, click the live site link below or click the image in this panel. Then navigate to the "Invitation" section and use one of the following codes: testcode1, testcode2, testcode3, testcode4, or testcode5.</i></p>
 			</div>
 			<p><b>The Source Code:</b> <a href="https://github.com/nhayward/wedding" target="_blank">https://github.com/nhayward/wedding</a></p>
-			<p><b>The Live Site:</b> <a href="http://carlybornstein.com/nickandcarly/" target="_blank">http://carlybornstein.com/nickandcarly/</a></p>
+			<p><b>The Live Site:</b> <a href="http://booklighteditorial.com/nickandcarly/" target="_blank">http://carlybornstein.com/nickandcarly/</a></p>
 		</div>
 		<div class="projImage">
-			<a href="http://www.carlybornstein.com/nickandcarly/" target="_blank"><img src="img/Wedding.jpg" /></a>
+			<a href="http://booklighteditorial.com/nickandcarly/" target="_blank"><img src="img/Wedding.jpg" /></a>
 		</div>
 	</div>
 
 	<div class="project">
 		<div class="projDesc">
-			<h2>CB Editing</h2>
-			<p><b>The Project:</b> To create a website for use by Carly Bornstein, a freelance editor, in order to connect with her clients, communicate her services, post her thoughts and advice in her blog, and promote her edited works in print.</p>
+			<h2>Revise & Resub</h2>
+			<p><b>The Project:</b> To create a website for use by Revise & Resub, a writing community run by a group of editors, as a home base for their followers and to host their annual contest #RevPit.</p>
 			<p><b>The Technologies:</b></p>
 			<div class="projTech">
 				<ul>
+					<li><a href="https://getgrav.org/" target="_blank">Grav CMS</a></li>
 					<li>HTML5</li>
 					<li>CSS3</li>
-					<li>JavaScript ES5</li>
 				</ul>
 				<ul>
+					<li>JavaScript</li>
+					<li>Twig</li>
 					<li>PHP</li>
-					<li>Wordpress (for the blog only)</li>
 				</ul>
 			</div>
 			<div class="challenge">
-				<h3>The Challenge: how to handle the blog</h3>
-				<p>I didn't want to have to build a full blog application from scratch, but I also didn't want to be constrained by themes of existing blog applications that would clash with the site as a whole. In addition, the client wanted an easy way to post to the blog without having to manually add content to the source code itself.</p>
-				<p>I initially tried inserting a few out-of-the-box blog tools that would theoretically integrate smoothly without affecting the existing UI, but lack of necessary technologies on the hosting platform as well as poor documentation of the tools themselves caused me to abandon most of them. I eventually decided to dive into WordPress. I hadn't considered WordPress at first because I saw it as a larger application base that would be used for building a site from start to finish, and I honestly wanted more control than that over the source code.</p>
-				<p>What I eventually discovered was that I could download the WordPress source code, move it into a section of my site, and utilize it's functionality within my already existing code. I created the blog in WordPress pointing to the specific area of the site that was going to use the blog. In that way the remainder of the site has nothing to do with it, and as far as WordPress is concerned the rest of the site doesn't even exist. In that way I was able to build a blog that was usable by the client through WordPress, but used my own styling and layout.</p>
+				<h3>The Challenge: a tight time frame</h3>
+				<p>I was approached by this group when a yearly pitch contest that they were a part of was in danger of not happening due to internal complications. There were many authors who were relying on this contest to happen as it always did, and the editors wanted to make something happen for them. The editors decided to quickly bootstrap their own pitch contest. This meant they needed, among other things, a website, and they needed it fast.</p>
+				<p>It was necessary for me to get their website up within 48 hours of when I was approached. I needed to get something done fast, but as much as possible I did not want to sacrifice quality. I decided to return to my old friend Grav. Using Grav's base theme I was able to get a functional site up quickly with some clear branding elements to set the site apart from others. I was then able to use Grav's admin plugin as I had with a previous site to give the clients power over the content so that we could work in tandem to get all of the necessary elements completed for the contest.</p>
+				<p>The end result was a success. The site was built and ready in time for the contest to begin and my clients were pleased with what I was able to produce in such a short time. Since then I have worked with the clients to update site functionality and add further elements that we did not have time to implement during the initial build.</p>
 			</div>
-			<p><b>The Source Code:</b> <a href="https://github.com/nhayward/CBEditing" target="_blank">https://github.com/nhayward/CBEditing</a></p>
-			<p><b>The Live Site:</b> <a href="http://www.carlybornstein.com/" target="_blank">http://www.carlybornstein.com/</a></p>
+			<p><b>The Source Code:</b> <a href="https://github.com/nhayward/revpit" target="_blank">https://github.com/nhayward/revpit</a></p>
+			<p><b>The Live Site:</b> <a href="http://reviseresub.com" target="_blank">http://reviseresub.com</a></p>
 		</div>
 		<div class="projImage">
-			<a href="http://www.carlybornstein.com" target="_blank"><img src="img/CBEditing.jpg" /></a>
+			<a href="http://reviseresub.com" target="_blank"><img src="img/Revpit.png" /></a>
 		</div>
 	</div>
 
@@ -101,7 +133,7 @@
 				<ul>
 					<li>HTML5</li>
 					<li>CSS3</li>
-					<li>JavaScript ES5</li>
+					<li>JavaScript</li>
 				</ul>
 				<ul>
 					<li><a href="http://jquery.com/" target="_blank">jQuery 1.11.3</a></li>
@@ -119,7 +151,7 @@
 			<p><b>The Live Site:</b> <a href="http://lamantiaenterprises.com/" target="_blank">http://lamantiaenterprises.com/</a></p>
 		</div>
 		<div class="projImage">
-			<a href="http://www.lamantiaenterprises.com" target="_blank"><img src="img/LamEnt.jpg" /></a>
+			<a href="http://lamantiaenterprises.com" target="_blank"><img src="img/LamEnt.jpg" /></a>
 		</div>
 	</div>
 
